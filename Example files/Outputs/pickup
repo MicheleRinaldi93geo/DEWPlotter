@@ -1,0 +1,175 @@
+* pickup file written by eq6.3245R100  
+*  supported by eqlib.3245R136  
+This run calculates the reaction of a mafic fluid from K05 with                 
+the harzburgite (based on Kessel et al., 2015 minus the cpx reactant). fO2 -3 QF
+                                                                                
+Fluid with 0 moles of carbon                                                    
+                                                                                
+All reacting with relative rates equal to 1.0                                   
+                                                                                
+SOLID SOLUTION COMPOSITION FROM PEARSON ET AL 2014 (PHN 1611)                   
+                                                                                
+BULK COMPOSITION: LHERZOLITE (55% OLIVINE - 20% OPX - 20% CPX - 5% GRT)         
+                                                                                
+TITRATION system at 999 C & 50.0 kb                                             
+                                                                                
+June, 2019 smoothed logK data (Huang & Sverjensky, 2019)                        
+                                                                                
+With correct CLINOPYROXENE(SS) OF                                               
+CaMgSi2O6-CaFeSi2O6-Mg2Si2O6(clino)                                             
+                                                                                
+Note: activity of clinoenstatite component destabilized by 0.3 logK units       
+                  diopside & hedenbergite stabilized by -0.4 units              
+                                                                                
+The bottom half of this input file is the pickup file produced by               
+eq3nr using the input file from Eclogitic -3                                    
+                                                                                
+                                                                                
+endit.  
+    nmodl1=  1              nmodl2=  0
+    tempc0=  9.99000E+02     jtemp=  0
+       tk1=  0.00000E+00       tk2=  0.00000E+00       tk3=  0.00000E+00
+    zistrt=  1.98000E+01     zimax=  5.00000E+01
+     tstrt=  0.00000E+00    timemx=  1.00000E+38
+    kstpmx=         1000     cplim=  1.00000E+38
+    dzprnt=  1.00000E+38    dzprlg=  5.00000E-01    ksppmx=10000
+    dzplot=  1.00000E+38    dzpllg=  1.00000E+38    ksplmx=10000
+     ifile= 60
+  iopt1-10=     0    0    0    2    0    0    0    0    0    0
+ iopt11-20=     0    0    0    0    0    0    0    0    0    0
+  iopr1-10=     0    0    0    0    1    0    0    1    0    0
+ iopr11-20=     0    0    0    0    0    0    0    0    0    0
+  iodb1-10=     0    0    0    0    0    0    0    0    0    0
+     11-20=     0    0    0    0    0    0    0    0    0    0
+     nxopt=  0
+      nffg=  0
+      nrct=  4
+  reactant= OLIVINE(SS)       
+     jcode=  1               jreac=  1
+      morr=  0.00000E+00      modr=  1.98000E+01
+   FORSTERITE            9.33000E-01
+   FAYALITE              6.70000E-02
+   endit.  
+       nsk=  0                  sk=  0.00000E+00        fk=  1.00000E+00
+       nrk=  1                nrpk=  0
+       rk1=  1.00000E+00       rk2=  0.00000E+00       rk3=  0.00000E+00
+  reactant= ORTHOPYROXENE(SS) 
+     jcode=  1               jreac=  1
+      morr=  0.00000E+00      modr=  5.40000E+00
+   ENSTATITE-OR          9.38000E-01
+   FERROSILITE           6.20000E-02
+   endit.  
+       nsk=  0                  sk=  0.00000E+00        fk=  1.00000E+00
+       nrk=  1                nrpk=  0
+       rk1=  1.00000E+00       rk2=  0.00000E+00       rk3=  0.00000E+00
+  reactant= CPX_SUBCALCIC(SS) 
+     jcode=  1               jreac=  1
+      morr=  0.00000E+00      modr=  3.80000E+00
+   DIOPSIDE              2.94000E-01
+   HEDENBERGITE          8.80000E-02
+   ENSTATITE-CL          6.03000E-01
+   JADEITE               1.40000E-02
+   endit.  
+       nsk=  0                  sk=  0.00000E+00        fk=  1.00000E+00
+       nrk=  1                nrpk=  0
+       rk1=  1.00000E+00       rk2=  0.00000E+00       rk3=  0.00000E+00
+  reactant= GARNET(SS)        
+     jcode=  1               jreac=  1
+      morr=  0.00000E+00      modr=  1.10000E+00
+   PYROPE                7.33000E-01
+   ALMANDINE             1.30000E-01
+   GROSSULAR             1.37000E-01
+   endit.  
+       nsk=  0                  sk=  0.00000E+00        fk=  1.00000E+00
+       nrk=  1                nrpk=  0
+       rk1=  1.00000E+00       rk2=  0.00000E+00       rk3=  0.00000E+00
+    dlzidp=   .10000E+39
+     tolbt=  1.00000E-10     toldl=  1.00000E-10      tolx=  1.00000E-08
+    tolsat=  5.00000E-03    tolsst=  1.00000E-02
+    screw1=  1.00000E-04    screw2=  0.00000E+00    screw3=  1.00000E-04
+    screw4=  1.00000E-04    screw5=  4.00000E+00    screw6=  4.00000E+00
+    zklogu= -6.00000E+00    zklogl=  2.00000E+00     zkfac=  9.80000E-01
+    dlzmx1=  1.00000E-08    dlzmx2=  1.00000E+38    nordlm=  6
+    itermx= 30              ntrymx= 25
+    npslmx=  8              nsslmx=  3              ioscan=  0
+This run calculates the reaction of a mafic fluid from K05 with                 
+the harzburgite (based on Kessel et al., 2015 minus the cpx reactant). fO2 -3 QF
+                                                                                
+Fluid with 0 moles of carbon                                                    
+                                                                                
+All reacting with relative rates equal to 1.0                                   
+                                                                                
+SOLID SOLUTION COMPOSITION FROM PEARSON ET AL 2014 (PHN 1611)                   
+                                                                                
+BULK COMPOSITION: LHERZOLITE (55% OLIVINE - 20% OPX - 20% CPX - 5% GRT)         
+                                                                                
+TITRATION system at 999 C & 50.0 kb                                             
+                                                                                
+June, 2019 smoothed logK data (Huang & Sverjensky, 2019)                        
+                                                                                
+With correct CLINOPYROXENE(SS) OF                                               
+CaMgSi2O6-CaFeSi2O6-Mg2Si2O6(clino)                                             
+                                                                                
+Note: activity of clinoenstatite component destabilized by 0.3 logK units       
+                  diopside & hedenbergite stabilized by -0.4 units              
+                                                                                
+The bottom half of this input file is the pickup file produced by               
+eq3nr using the input file from Eclogitic -3                                    
+                                                                                
+                                                                                
+endit.
+    uacion= NA+         
+    tempci=  9.99000E+02
+     nxmod=  8
+   species= ENSTATITE-CL
+      type=  1              option=  1              xlkmod=  3.00000E-01
+   species= DIOPSIDE    
+      type=  1              option=  1              xlkmod= -4.00000E-01
+   species= HEDENBERGITE
+      type=  1              option=  1              xlkmod= -4.00000E-01
+   species= ANDRADITE   
+      type=  1              option=  1              xlkmod=  1.15000E+00
+   species= AL(OH)SI(OH)
+      type=  0              option= -1              xlkmod=  0.00000E+00
+   species= CH3CH2COO-  
+      type=  0              option= -1              xlkmod=  0.00000E+00
+   species= H8SI3O10(AQ)
+      type=  0              option=  1              xlkmod=  1.07100E-01
+   species= H2CO3(AQ)   
+      type=  0              option=  1              xlkmod= -7.05270E-01
+     iopg1=  0               iopg2= -1               iopg3=  0
+     iopg4=  0               iopg5=  1               iopg6=  0
+     iopg7=  0               iopg8=  0               iopg9=  0
+    iopg10=  0
+       kct=  8                 ksq=  9                 kmt=  9
+       kxt= 21                kdim= 21                kprs=  0
+   O                  1.838516572513988E+02       7.931008097677621E+01
+   NA                 1.104336694325612E+00       1.050493721691950E+00
+   CA                 2.281365318046422E+00       1.500380711590202E-01
+   MG                 3.005942006941370E+01       3.749916246703828E-01
+   AL                 1.927669848719133E+00       2.911883353647619E-01
+   SI                 3.554905780103689E+01       1.524100027191051E+00
+   H                  1.495733286901553E+02       1.495733286901558E+02
+   FE                 2.196105781869305E+00       2.972448535922266E-02
+   electr             2.408839998579990E-07
+   H2O                H2O                    1.850788556917312E+00
+   NA+                NA+                   -5.818909037510619E-02
+   CA++               CA++                  -4.184358471077754E+00
+   MG++               MG++                  -4.591975351595913E+00
+   AL+++              AL+++                 -1.626922882844046E+01
+   H4SIO4(AQ)         H4SIO4(AQ)            -1.543727085125010E-01
+   H+                 H+                    -4.416121167399396E+00
+   FE++               FE++                  -7.048439194116664E+00
+   O2(G)              O2(G)                 -1.115236668493597E+01
+   ORTHOPYROXENE(SS   ENSTATITE-OR           1.371694026832017E+00
+   ORTHOPYROXENE(SS   FERROSILITE            2.178875999320443E-01
+   GARNET(SS)         PYROPE                 2.726879433289743E-01
+   GARNET(SS)         ALMANDINE             -4.539063679420772E-01
+   GARNET(SS)         GROSSULAR             -8.208788028769332E-01
+   GARNET(SS)         ANDRADITE             -1.462521573860791E+00
+   CPX_SUBCALCIC(SS   DIOPSIDE               2.660467073693017E-01
+   CPX_SUBCALCIC(SS   HEDENBERGITE          -9.982457148222708E-01
+   CPX_SUBCALCIC(SS   ENSTATITE-CL           8.453812444392232E-02
+   CPX_SUBCALCIC(SS   JADEITE               -1.268870971021110E+00
+   MAGNETITE(SS)      MAGNETITE             -2.174289146905220E+00
+   MAGNETITE(SS)      HEMATITE              -2.012955098785975E+00

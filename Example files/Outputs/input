@@ -1,0 +1,179 @@
+This run calculates the reaction of a mafic fluid from K05 with
+the harzburgite (based on Kessel et al., 2015 minus the cpx reactant). fO2 -3 QFM 
+
+Fluid with 0 moles of carbon
+
+All reacting with relative rates equal to 1.0
+
+SOLID SOLUTION COMPOSITION FROM PEARSON ET AL 2014 (PHN 1611)
+
+BULK COMPOSITION: LHERZOLITE (55% OLIVINE - 20% OPX - 20% CPX - 5% GRT)
+
+TITRATION system at 999 C & 50.0 kb
+
+June, 2019 smoothed logK data (Huang & Sverjensky, 2019)
+
+With correct CLINOPYROXENE(SS) OF
+CaMgSi2O6-CaFeSi2O6-Mg2Si2O6(clino)                             
+
+Note: activity of clinoenstatite component destabilized by 0.3 logK units
+                  diopside & hedenbergite stabilized by -0.4 units
+
+The bottom half of this input file is the pickup file produced by
+eq3nr using the input file from Eclogitic -3 
+
+Reference: Rinaldi et al., 2023
+
+     
+endit.
+    nmodl1=  1              nmodl2=  0
+    tempc0=         999.     jtemp=  0
+       tk1=           0.       tk2=           0.       tk3=           0.
+    zistrt=          0.0     zimax=   50.0  
+     tstrt=           0.    timemx=           0.
+    kstpmx=         1000     cplim=           0.
+     dzipr=       1.e+38    dzprlg=          0.5    ksppmx= 10000
+    dzplot=       1.e+38    dzpllg=       10000.    ksplmx= 10000
+     ifile= 60
+  iopt1-10=     0    0    0    2    1    0    0    0    0    0
+     11-20=     0    0
+  iopr1-10=     0    0    0    0    1    0    0    1    0    0
+     11-20=     0    0
+  iodb1-10=     0    0    0    0    0    0    0    0    0    0
+     11-20=     0    0    0
+*  nxopt = number of subset selection options for suppressing minerals.
+*  nxopex = number of exceptions.
+     nxopt=  0
+*  nffg = number of gas fugacities to be fixed
+      NFFG=  0
+*   SPECIES= CO2(G)           MOFFG=  1.0            XLKFFG=  -3.5
+*   SPECIES= O2(G)            MOFFG=  1.0            XLKFFG=  -0.7
+*  nrct = number of reactants
+      nrct=  4
+*--------------------------------------------------------------------
+  reactant= OLIVINE(SS)
+     jcode= 1                jreac=  0
+      morr=     19.8          modr=           0.
+   FORSTERITE                 0.933
+   FAYALITE                   0.067
+   endit.
+       nsk=  0                  sk=           0.        fk=           0.
+       nrk=  1                nrpk=  0
+       rk1=      1.0           rk2=           0.       rk3=           0.
+* ----------------------------------------------------------------
+  reactant= ORTHOPYROXENE(SS)
+     jcode= 1                jreac=  0
+      morr=      5.4          modr=           0.
+   ENSTATITE-OR               0.938
+   FERROSILITE                0.062
+   endit.
+       nsk=  0                  sk=           0.        fk=           0.
+       nrk=  1                nrpk=  0
+       rk1=      1.0           rk2=           0.       rk3=           0.
+* ----------------------------------------------------------------
+  reactant= CPX_SUBCALCIC(SS)
+     jcode= 1                jreac=  0
+      morr=      3.8          modr=           0.
+   DIOPSIDE                  0.294
+   HEDENBERGITE              0.088
+   ENSTATITE-CL              0.603
+   JADEITE                   0.014
+   endit.
+       nsk=  0                  sk=           0.        fk=           0.
+       nrk=  1                nrpk=  0
+       rk1=      1.0           rk2=           0.       rk3=           0.
+* ----------------------------------------------------------------
+  reactant= GARNET(SS)
+     jcode= 1                jreac=  0
+      morr=       1.1         modr=           0.
+   GROSSULAR                  0.137
+   PYROPE                     0.733
+   ALMANDINE                  0.130
+   endit.
+       nsk=  0                  sk=           0.        fk=           0.
+       nrk=  1                nrpk=  0
+       rk1=      1.0           rk2=           0.       rk3=           0.
+* ----------------------------------------------------------------
+*
+*           normally, take the defaults for parameters in this block
+*                       by entering zeros or blanks
+*
+    dlzidp=           0.
+     tolbt=       1.e-10     toldl=       1.e-10      tolx=           0.
+    tolsat=           0.    tolsst=           0.
+    screw1=           0.    screw2=           0.    screw3=           0.
+    screw4=           0.    screw5=           0.    screw6=           0.
+    zklogu=           0.    zklogl=           0.
+    dlzmx1=           0.    dlzmx2=           0.
+    itermx=  0              ntrymx=  0
+    npslmx=  0              nsslmx=  0
+*
+*--------------------------------------------------------------------
+* pickup file written by eq3nr.3245R110
+*  supported by eqlib.3245R136
+Kessel(2015) at 999°C & 50.0 kbar - Eclogitic fluid                            
+                                                                                
+All logK values predicted from smoothed fits, trimer increased by 0.11 for gamma
+                                                                                
+logfO2 at -10.4, i.e. QFM - 3.0                                                 
+                                                                                
+                                                                                
+                                                                                
+Exptl. mineral compositions with all Fe as Fe2+                                 
+                                                                                
+Grossular for Al+++                                                             
+Pyrope for Mg++                                                                 
+Almandine for Fe++                                                              
+Diopside for Ca++                                                               
+Jadeite for H+                                                                  
+Coesite for SiO2(aq)                                                            
+Na+ by charge balance                                                           
+                                                                                
+K Cl free                                                                       
+                                                                                
+Ideal site-mixing solid solution for garnet and clinopyroxene                   
+                                                                                
+endit.
+    uacion= NA+         
+    tempci=   .99900E+03
+     nxmod=  8
+   species= ENSTATITE-CL      
+      type=  1              option=  1              xlkmod=   .30000E+00
+   species= DIOPSIDE          
+      type=  1              option=  1              xlkmod=  -.40000E+00
+   species= HEDENBERGITE      
+      type=  1              option=  1              xlkmod=  -.40000E+00
+   species= ANDRADITE         
+      type=  1              option=  1              xlkmod=   .11500E+01
+   species= AL(OH)SI(OH)      
+      type=  0              option= -1              xlkmod=   .00000E+00
+   species= CH3CH2COO-        
+      type=  0              option= -1              xlkmod=   .00000E+00
+   species= H8SI3O10(AQ)      
+      type=  0              option=  1              xlkmod=   .10710E+00
+   species= H2CO3(AQ)         
+      type=  0              option=  1              xlkmod=  -.70527E+00
+     iopg1=  0               iopg2= -1               iopg3=  0
+     iopg4=  0               iopg5=  1               iopg6=  0
+     iopg7=  0               iopg8=  0               iopg9=  0
+    iopg10=  0
+       kct=  8                 ksq=  9                 kmt=  9
+       kxt=  9                kdim=  9                kprs=  0
+   O                   .100934491684241E+03
+   NA                  .105113669432562E+01
+   CA                  .679176279134544E+00
+   MG                  .139662525062022E-01
+   AL                  .116516702131977E+01
+   SI                  .115688158791985E+02
+   H                   .149573328690157E+03
+   FE                  .574158874086056E-01
+   electr              .240883999857999E-06
+   H2O                H2O                     .174436091209183E+01
+   NA+                NA+                    -.137816303859251E-01
+   CA++               CA++                   -.368795822860213E+01
+   MG++               MG++                   -.515475755752596E+01
+   AL+++              AL+++                  -.145798981555975E+02
+   H4SIO4(AQ)         H4SIO4(AQ)              .318263430633497E+00
+   H+                 H+                     -.414245280553909E+01
+   FE++               FE++                   -.692265583000411E+01
+   O2(G)              O2(G)                  -.104000000000000E+02
