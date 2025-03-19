@@ -1,0 +1,8 @@
+# Ignore JetBrains IDE files
+.idea/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore .gitattributes files (if you don't want these tracked)
+.gitattributes
