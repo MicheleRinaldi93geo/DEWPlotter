@@ -13,7 +13,8 @@ way as EQ6 (i.e., ./DEWPlotter) and a python library to be used into a python ro
 
 ### Installation
 
-You can just download the executable to use it. No further work is needed.  
+You can just download the executable to use it. You'll find it into the zip file attached 
+to the release. No further work is needed.  
 
 To install the python version through your terminal:  
 1) Install Python: https://www.python.org and https://realpython.com/installing-python/.  
