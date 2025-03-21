@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 # Library info
 setup(
     name="DEWPlotter_lib",
-    version="1.0.0",
+    version="1.1.0",
     author='ENKI and Michele Rinaldi',
     author_email='rinaldim@tcd.ie',
     url='http://www.dewcommunity.org',
