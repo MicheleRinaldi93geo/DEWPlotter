@@ -576,7 +576,12 @@ def read_moles_dissolved():
                 if s not in line[:20]:
                     continue
                 if line.strip()[21:32].strip() != '':
-                    value = float(line.strip()[21:32].strip())
+                    value = line.strip()[21:32].strip()
+                    if 'E' in value:
+                        value = float(value)
+                    else:
+                        index = value.index('-')
+                        value = float(value[:index] + 'E' + value[index:])
             vals.append(max(-12, value))
 
         # If species does not have values in tables, ignore it
