@@ -1,5 +1,7 @@
 from setuptools import setup, find_packages
 
+# Version 1.1.0
+
 # Library info
 setup(
     name="DEWPlotter_lib",

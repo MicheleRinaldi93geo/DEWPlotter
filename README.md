@@ -44,3 +44,7 @@ All the output files from the EQ6 package must be there (output, tab, tabx)
 Please not that the library is not fully automated, and it may not find all the aqueous species
 in the output file. If you spot a non-analysed species, please send me an email and I'll add it
 to the library.
+
+### Logfile
+v 1.0.0 - Library created
+v 1.1.0 - Fixed problem with PSAT
